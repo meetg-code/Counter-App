@@ -1,0 +1,185 @@
+.title {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+}
+
+.title .icon {
+  background: linear-gradient(135deg, #ffffff, #a1a1aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.count-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 25px;
+}
+
+.count-number h1 {
+  font-size: 7rem;
+  color: white;
+}
+
+.count-number p {
+  color: #c9cdd4;
+  margin-top: -20px;
+  font-size: 1.02rem;
+}
+
+/* Input Box */
+
+.change-by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.change-by p {
+  font-size: 0.85rem;
+  color: #8f98a8;
+}
+
+.change-by input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 3px 0px;
+  font-size: 1rem;
+  margin-top: 6px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.change-by input::-webkit-outer-spin-button,
+.change-by input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Buttons */
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.buttons .btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.buttons .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+.buttons .btn:active {
+  transform: scale(0.96);
+}
+
+.increase {
+  background: linear-gradient(135deg, #10b981, #004d3a);
+}
+
+.decrease {
+  background: linear-gradient(135deg, #ef4444, #7a0000);
+}
+
+.reset {
+  background: linear-gradient(135deg, #3b82f6, #002167);
+}
+
+/* ========================= */
+/* Responsive for Mobile */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+    padding-top: 35px;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .count-number {
+    padding-top: 20px;
+  }
+
+  .count-number h1 {
+    font-size: 5rem;
+  }
+
+  .count-number p {
+    font-size: 0.95rem;
+    text-align: center;
+    margin-top: -10px;
+  }
+
+  .change-by {
+    padding-top: 25px;
+  }
+
+  .change-by p {
+    font-size: 0.9rem;
+  }
+
+  .change-by input {
+    width: 220px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px 20px 0;
+  }
+
+  .buttons .btn {
+    width: 100%;
+    max-width: 260px;
+    padding: 14px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .count-number h1 {
+    font-size: 4rem;
+  }
+
+  .count-number p {
+    font-size: 0.85rem;
+  }
+
+  .change-by input {
+    width: 180px;
+  }
+
+  .buttons .btn {
+    max-width: 220px;
+    font-size: 0.95rem;
+  }
+}
